@@ -1,0 +1,35 @@
+.search_bar_container {
+    background-color: #0f2437;
+    width: 700px;
+    padding: 3px;
+}
+
+.search_bar_container input {
+    height: 28px;
+    width: 77%;
+    margin-right: 3px;
+    padding: 3px;
+}
+
+.search_bar_container button {
+    background-color: #0f2437;
+    color: #00ffff;
+    height: 28px;
+    width: 21%;
+    outline: none;
+    border: none;
+    padding: 2px;
+}
+
+.search_bar_container button:hover {
+    background-color: #00ffff;
+    color: #0f2437;
+}
+
+.search_results_container {
+    background-color: #525f6b;
+}
+
+.search_results {
+    padding: 0;
+}

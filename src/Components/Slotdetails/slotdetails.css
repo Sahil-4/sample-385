@@ -1,0 +1,52 @@
+.mentor_slot_details {
+    height: 420px;
+    width: 420px;
+    background-color: deeppink;
+    color: #fff;
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+}
+
+.id_container input {
+    background-color: #fff;
+    height: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+.id_container button {
+    height: 20px;
+}
+
+.mentor_availablity {
+    width: 75%;
+    margin-top: 15px;
+    text-align: left;
+}
+
+.mentor_availablity .day {
+    background-color: #da70d6;
+    margin: 15px;
+    padding: 5px;
+}
+
+.mentor_availablity .day p {
+    color: #000;
+}
+
+.mentor_availablity .day div {
+    color: rgb(28, 24, 24);
+}
+
+.close_button_container {
+    width: 100%;
+    height: 32px;
+}
+
+.close_button_container button {
+    height: 18px;
+    float: right;
+}
