@@ -11,9 +11,8 @@ function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    return () => {
-      dispatch(getData());
-    };
+    dispatch(getData());
+    return () => {};
   }, [dispatch]);
 
   return (
