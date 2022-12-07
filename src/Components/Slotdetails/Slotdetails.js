@@ -28,7 +28,7 @@ const Slotdetails = () => {
         <input type="text" disabled value={slotDetails?.userId || ""} />
         <button
           onClick={() => {
-            window.navigator.clipboard = slotDetails?.userId;
+            window.navigator.clipboard.writeText(slotDetails?.userId);
           }}
         >
           Copy

@@ -33,13 +33,23 @@ const dataSlice = createSlice({
     },
 
     updateSearchResults: (state, action) => {
-      // searches
       const { query, mentors } = action.payload;
-      state.searches = mentors.filter((mentor) => {
-        if (mentor.name.toLowerCase().includes(query.toLowerCase())) {
-          return mentor;
+      let arr = [];
+      mentors.forEach((mentor) => {
+        if (
+          query !== "" &&
+          (mentor.name.toLowerCase().includes(query.toLowerCase()) ||
+            mentor._id === query)
+        ) {
+          arr.push(mentor);
         }
       });
+
+      if (arr.length === 0) {
+        alert("no results found");
+      }
+
+      state.searches = arr;
     },
   },
 
